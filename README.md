@@ -18,10 +18,10 @@ String cashaddr = BCHUtils().encode("bchtest", 0, "公钥Hash(SHA256(RIPEMD160(P
 String cashaddr = BCHUtils().encodeFull("bchtest", 0, "公钥Hash(SHA256(RIPEMD160(Pubkey)))");
 ```
 其中，第一个参数前缀选项：  
-```bitcoincash``` 用于Bitcoin Cash主网络
-```bchtest``` 用于Bitcoin Cash测试网络
-```bchreg``` 用于Bitcoin Cash注册测试
-第二个参数用于版本字节中的类型  
+```bitcoincash``` 用于Bitcoin Cash主网络  
+```bchtest``` 用于Bitcoin Cash测试网络  
+```bchreg``` 用于Bitcoin Cash注册测试  
+第二个参数用于版本字节中的类型    
 ```0``` ：P2KH，```1``` ：P2SH   
 第三个参数是公钥Hash，也就是生成BTC地址时的值，生成其的伪代码为  
 ```
