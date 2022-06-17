@@ -8,7 +8,7 @@ Wallet开发用到了BCH，需要使用BCH的CashAddr格式的地址
 pub.dev中的Package只有两个两年前更新的库,依赖的老版本的库对新开发的项目不友好.  
 根据官方规则编写了一个Dart工具类，没有依赖包，参考了其它语言的实现  
   
-# Get start  
+# Use 
   
 使用方法：  
 ```
