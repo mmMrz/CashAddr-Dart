@@ -17,16 +17,20 @@ String cashaddr = BCHUtils().encode("bchtest", 0, "公钥Hash(SHA256(RIPEMD160(P
 //生成带前缀(bitcoincash|bchtest|bchreg)和分隔符(:)的地址
 String cashaddr = BCHUtils().encodeFull("bchtest", 0, "公钥Hash(SHA256(RIPEMD160(Pubkey)))");
 ```
+  
 其中，第一个参数前缀选项：  
 ```bitcoincash``` 用于Bitcoin Cash主网络  
 ```bchtest``` 用于Bitcoin Cash测试网络  
 ```bchreg``` 用于Bitcoin Cash注册测试  
+  
 第二个参数用于版本字节中的类型    
 ```0``` ：P2KH，```1``` ：P2SH   
+  
 第三个参数是公钥Hash，也就是生成BTC地址时的值，生成其的伪代码为  
 ```
 SHA256(RIPEMD160(Pubkey))
 ```
+  
 具体可参考另一篇Blog  
 [生成BTC的Address，以及解码出公钥哈希(Pubkey Hash)](https://www.jianshu.com/p/1980c06a234e)  
   
